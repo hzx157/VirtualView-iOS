@@ -134,7 +134,6 @@
 				0D5DD73F2084CC4C009B8490 /* Sources */,
 				0D5DD7402084CC4C009B8490 /* Frameworks */,
 				0D5DD7412084CC4C009B8490 /* Resources */,
-				2BC85AB8D97543351DED230E /* [CP] Embed Pods Frameworks */,
 				97787F9F1D9423260E93FA5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -191,37 +190,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2BC85AB8D97543351DED230E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-RealtimePreview/Pods-RealtimePreview-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		97787F9F1D9423260E93FA5C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-RealtimePreview/Pods-RealtimePreview-resources.sh",
-				"${PODS_ROOT}/XLForm/XLForm/XLForm.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealtimePreview/Pods-RealtimePreview-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealtimePreview/Pods-RealtimePreview-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-RealtimePreview/Pods-RealtimePreview-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealtimePreview/Pods-RealtimePreview-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB2881DD9D7C7EA1D966BA3E /* [CP] Check Pods Manifest.lock */ = {
