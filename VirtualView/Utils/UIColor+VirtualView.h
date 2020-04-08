@@ -7,6 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+///设置动态颜色，主要适配暗黑模式的dict
+void VVSetColorWithDynamicProvider(NSDictionary * _Nonnull dict);
 @interface UIColor (VirtualView)
 
 /**
