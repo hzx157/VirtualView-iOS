@@ -1,7 +1,6 @@
 ```
-基于VirtualView对iOS13做了暗黑适配
+1.0 本次是基于VirtualView对iOS13做了暗黑适配的修改
 ```
-
 [![CocoaPods](https://img.shields.io/cocoapods/v/VirtualView.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/p/VirtualView.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/l/VirtualView.svg)]()
 
 # VirtualView 
