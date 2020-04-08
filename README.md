@@ -1,5 +1,7 @@
 ```
-1.0 本次是基于VirtualView对iOS13做了暗黑适配的修改
+1.0 本次是基于VirtualView对iOS13做了暗黑适配的修改 
+可以直接添加
+pod 'VirtualView',:git => 'https://github.com/hzx157/VirtualView-iOS.git'
 ```
 [![CocoaPods](https://img.shields.io/cocoapods/v/VirtualView.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/p/VirtualView.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/l/VirtualView.svg)]()
 
