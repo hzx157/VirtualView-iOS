@@ -59,7 +59,7 @@
     
 //    NSLog(@"----%@",self.container.rootNode);
     for(VVBaseNode *view in [VVViewContainer variableNodes:self.container.rootNode]){
-        NSLog(@"---%ld--%@---%@",view.nodeID,view.hzxId,view.className);
+        NSLog(@"---%ld--%@---%@",view.nodeID,view.name,view.className);
 //          if(view.subviews>0){
 //
 //          }

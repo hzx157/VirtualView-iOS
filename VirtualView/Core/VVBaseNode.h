@@ -12,7 +12,6 @@
 
 @property (nonatomic, assign, readonly) NSInteger nodeID;
 
-@property (nonatomic, assign) NSString *hzxId;
 @property (nonatomic, strong) NSString *templateType;
 
 // self visibility
@@ -48,6 +47,7 @@
 @property (nonatomic, strong) UIColor *backgroundColor;
 @property (nonatomic, strong) UIColor *borderColor;
 @property (nonatomic, assign) CGFloat borderWidth;
+@property (nonatomic, strong) NSString *name; //变量名
 
 // node tree & native view
 @property (nonatomic, weak, readonly) VVBaseNode  *superNode;

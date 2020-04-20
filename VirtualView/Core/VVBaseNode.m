@@ -250,7 +250,6 @@
         switch (key) {
             case STR_ID_id:
                 _nodeID = value;
-                self.hzxId = [NSString stringWithFormat:@"%d",value];
 //                NSLog(@"--_hzxId---%d---key==%ld",value,(long)self.hzxId);
                 break;
             case STR_ID_visibility:
@@ -347,7 +346,7 @@
             _className = value;
             break;
         case STR_ID_name:
-            
+            _name = value;
         break;
         default:
             ret = NO;
