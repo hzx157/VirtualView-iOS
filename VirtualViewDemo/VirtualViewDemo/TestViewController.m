@@ -54,6 +54,28 @@
     self.scrollView.contentSize = size;
     self.container.frame = CGRectMake(0, 0, size.width, size.height);
     [self.container update:self.params];
+    
+//    [self getView:self.container];
+    
+//    NSLog(@"----%@",self.container.rootNode);
+    for(VVBaseNode *view in [VVViewContainer variableNodes:self.container.rootNode]){
+        NSLog(@"---%ld--%@---%@",view.nodeID,view.hzxId,view.className);
+//          if(view.subviews>0){
+//
+//          }
+          
+        }
+    [self getView:self.container];
+}
+
+-(void)getView:(UIView *)subViews{
+    for(UIView *view in subViews.subviews){
+            NSLog(@"---%@",view);
+//        if(view.subviews>0){
+//            [self getView:view];
+//        }
+        
+      }
 }
 
 @end

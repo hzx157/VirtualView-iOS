@@ -250,6 +250,8 @@
         switch (key) {
             case STR_ID_id:
                 _nodeID = value;
+                self.hzxId = [NSString stringWithFormat:@"%d",value];
+//                NSLog(@"--_hzxId---%d---key==%ld",value,(long)self.hzxId);
                 break;
             case STR_ID_visibility:
                 self.visibility = value;
@@ -265,6 +267,7 @@
                 break;
             case STR_ID_background:
                 self.backgroundColor = [UIColor vv_colorWithARGB:(NSUInteger)value];
+//                self.hzxId = value;
                 break;
             case STR_ID_borderColor:
                 self.borderColor = [UIColor vv_colorWithARGB:(NSUInteger)value];
@@ -343,6 +346,9 @@
         case STR_ID_class:
             _className = value;
             break;
+        case STR_ID_name:
+            
+        break;
         default:
             ret = NO;
             break;

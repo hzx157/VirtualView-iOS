@@ -6,16 +6,19 @@
         orientation="V"
         background="#FFFFFF">
     <NText
-            text="clickable"
+            text="clickable188811"
             textSize="12"
             textColor="#333333"
             paddingLeft="5"
             background="#cccccc"
             layoutWidth="match_parent"
-            layoutHeight="20"/>
+            layoutHeight="20"
+            id="1"
+            class = "clickable"/>
     <FrameLayout
             layoutWidth="match_parent"
-            layoutHeight="300">
+            layoutHeight="300"
+            id="2">
         <NText
                 text="A: bottom"
                 textSize="12"
@@ -25,7 +28,8 @@
                 layoutGravity="top|left"
                 gravity="h_center"
                 flag="flag_clickable|flag_longclickable"
-                action="actionA"/>
+                action="actionA"
+                id="4"/>
         <NText
                 text="B: center"
                 textSize="12"
@@ -35,7 +39,8 @@
                 layoutGravity="top|right"
                 gravity="h_center"
                 flag="flag_clickable|flag_longclickable"
-                action="actionB"/>
+                action="actionB"
+                id="5"/>
         <NText
                 text="C: top"
                 textSize="12"
@@ -45,7 +50,8 @@
                 layoutGravity="bottom|h_center"
                 gravity="h_center"
                 flag="flag_clickable|flag_longclickable"
-                action="actionC"/>
+                action="actionC"
+                id="6"/>
     </FrameLayout>
 
     <NText
@@ -55,7 +61,8 @@
             paddingLeft="5"
             background="#cccccc"
             layoutWidth="match_parent"
-            layoutHeight="20"/>
+            layoutHeight="20"
+            id="7"/>
     <GridLayout
             layoutWidth="match_parent"
             layoutHeight="200"
@@ -66,7 +73,8 @@
             background="#ffeeee"
             itemHorizontalMargin="5"
             colCount="3"
-            itemHeight="180">
+            itemHeight="180"
+            id="8">
         <VHLayout
                 layoutHeight="180"
                 layoutWidth="match_parent"
@@ -128,13 +136,15 @@
             <NImage
                     src="${content[2].imgUrl}"
                     layoutWidth="match_parent"
-                    layoutHeight="150" />
+                    layoutHeight="150"
+                    id="11"/>
             <NText
                     text="${content[2].title}"
                     textSize="12"
                     gravity="h_center"
                     layoutWidth="match_parent"
-                    layoutHeight="30"/>
+                    layoutHeight="30"
+                    id="12"/>
         </VHLayout>
     </GridLayout>
 </VHLayout>

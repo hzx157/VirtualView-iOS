@@ -183,6 +183,7 @@ typedef NS_ENUM(NSUInteger, VVLineStyle) {
 
 #define STR_ID_ck  3176
 #define STR_ID_inMainThread  999999
+#define STR_ID_name  3373707
 
 #ifdef VV_ALIBABA
 #define STR_ID_Component  604060893

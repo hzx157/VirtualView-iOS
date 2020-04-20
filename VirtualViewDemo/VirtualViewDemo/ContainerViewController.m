@@ -30,6 +30,13 @@
         [self.navigationController presentViewController:alert animated:YES completion:nil];
     }
 }
+- (void)virtualView:(VVBaseNode *)node clickedWithAction:(NSString *)action andValue:(NSString *)value{
+    if (action) {
+         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tap" message:action preferredStyle:UIAlertControllerStyleAlert];
+         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+         [self.navigationController presentViewController:alert animated:YES completion:nil];
+     }
+}
 
 - (void)virtualViewLongPressedWithAction:(NSString *)action andValue:(NSString *)value
 {

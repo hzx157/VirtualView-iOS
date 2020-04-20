@@ -4,6 +4,8 @@
         layoutHeight="800"
         background="#FFFFFF">
     <NText
+            name = "heihei"
+            class = "hzx11"
             text="width = match_parent"
             textSize="12"
             textColor="#333333"
@@ -85,7 +87,7 @@
             layoutMarginRight="20"
             autoDimDirection="X"
             autoDimX="4"
-            autoDimY="1"
+            autoDimY="2"
             background="#0000FF"/>
     <NText
             text="gravity = h_center|bottom"

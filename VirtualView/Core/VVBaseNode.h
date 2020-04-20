@@ -11,6 +11,8 @@
 @interface VVBaseNode : NSObject
 
 @property (nonatomic, assign, readonly) NSInteger nodeID;
+
+@property (nonatomic, assign) NSString *hzxId;
 @property (nonatomic, strong) NSString *templateType;
 
 // self visibility
