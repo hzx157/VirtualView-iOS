@@ -43,6 +43,7 @@
     [self.scrollView addSubview:self.container];
     [self.container findWithName:@"heihei" block:^(BOOL isImageView, NVImageView *imageView, NVTextView *textView) {
          NSLog(@"---%@",textView);
+        textView.text = @"哈哈收到货哈";
      }];
 }
 

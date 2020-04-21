@@ -7,6 +7,9 @@
 
 #import <UIKit/UIKit.h>
 #import "VVBaseNode.h"
+#import "NVTextView.h"
+#import "NVImageView.h"
+#import "NVLineView.h"
 
 @protocol VirtualViewDelegate <NSObject>
 
