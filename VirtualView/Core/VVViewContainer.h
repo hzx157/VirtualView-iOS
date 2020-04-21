@@ -19,6 +19,7 @@
 
 @end
 
+@class NVTextView,NVImageView;
 @interface VVViewContainer : UIView
 
 @property (nonatomic, strong, readonly) VVBaseNode *rootNode;
@@ -69,4 +70,6 @@
 
 + (NSArray *)variableNodes:(VVBaseNode *)rootNode;
 
+//黄真祥新增方法
+-(void)findWithName:(NSString *)name block:(void(^)(BOOL isImageView,NVImageView *imageView,NVTextView *textView))block;
 @end

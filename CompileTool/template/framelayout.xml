@@ -6,7 +6,7 @@
     <NText
             name = "heihei"
             class = "hzx11"
-            text="width = match_parent"
+            text="width = match_parent111"
             textSize="12"
             textColor="#333333"
             paddingLeft="5"
@@ -72,6 +72,7 @@
                 background="#800000FF"/>
     </FrameLayout>
     <NText
+            name = "hzx"
             text="autoDim = X"
             textSize="12"
             textColor="#333333"
@@ -90,6 +91,7 @@
             autoDimY="2"
             background="#0000FF"/>
     <NText
+            name = "hzx1"
             text="gravity = h_center|bottom"
             textSize="12"
             textColor="#333333"

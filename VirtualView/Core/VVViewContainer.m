@@ -10,6 +10,8 @@
 #import "VVTemplateManager.h"
 #import "VVPropertyExpressionSetter.h"
 #import "VVConfig.h"
+#import "NVImageView.h"
+#import "NVTextView.h"
 #ifdef VV_ALIBABA
 #import <UT/AppMonitor.h>
 #endif
@@ -203,6 +205,41 @@
 - (VVBaseNode *)nodeWithID:(NSInteger)nodeID
 {
     return [self.rootNode nodeWithID:nodeID];
+}
+
+-(void)findWithName:(NSString *)name block:(void(^)(BOOL isImageView,NVImageView *imageView,NVTextView *textView))block{
+    
+    VVBaseNode *node;
+     [self findNode:self.rootNode name:name resultNode:&node];
+    if(node){
+        if([node isKindOfClass:[NVImageView class]]){
+              if(block)
+                  block(YES,(NVImageView *)node,nil);
+        }else{
+            if(block)
+                block(NO,nil,(NVTextView *)node);
+        }
+    }
+    
+    
+}
+
+
+
+-(void )findNode:(VVBaseNode *)node name:(NSString *)name resultNode:(VVBaseNode **)reNode{
+    
+    if([node.name isEqualToString:name]){
+        *reNode = node;
+        return;
+    }
+            
+    for(VVBaseNode *view in node.subNodes){
+          
+        [self findNode:view name:name resultNode:reNode];
+               
+    }
+    
+    
 }
 
 + (NSArray *)variableNodes:(VVBaseNode *)rootNode

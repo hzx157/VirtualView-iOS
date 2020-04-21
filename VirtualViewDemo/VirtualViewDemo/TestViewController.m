@@ -41,6 +41,9 @@
     }
     self.container = [VVViewContainer viewContainerWithTemplateType:self.title];
     [self.scrollView addSubview:self.container];
+    [self.container findWithName:@"heihei" block:^(BOOL isImageView, NVImageView *imageView, NVTextView *textView) {
+         NSLog(@"---%@",textView);
+     }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -55,27 +58,9 @@
     self.container.frame = CGRectMake(0, 0, size.width, size.height);
     [self.container update:self.params];
     
-//    [self getView:self.container];
     
-//    NSLog(@"----%@",self.container.rootNode);
-    for(VVBaseNode *view in [VVViewContainer variableNodes:self.container.rootNode]){
-        NSLog(@"---%ld--%@---%@",view.nodeID,view.name,view.className);
-//          if(view.subviews>0){
-//
-//          }
-          
-        }
-    [self getView:self.container];
-}
+ 
 
--(void)getView:(UIView *)subViews{
-    for(UIView *view in subViews.subviews){
-            NSLog(@"---%@",view);
-//        if(view.subviews>0){
-//            [self getView:view];
-//        }
-        
-      }
 }
 
 @end
